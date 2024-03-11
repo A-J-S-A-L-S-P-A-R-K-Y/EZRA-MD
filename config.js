@@ -12,7 +12,7 @@ module.exports = {
   ANTILINK: toBool(process.env.ANTI_LINK) || false,
   LOGS: toBool(process.env.LOGS) || true,
   ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
-  SESSION_ID:process.env.SESSION_ID || " ",
+  SESSION_ID:process.env.SESSION_ID || "Axl~uP8bZ09X£GNWu%s48qsP",
   LANG: process.env.LANG || "EN",
   HANDLERS: process.env.PREFIX || '^[.]',
   BRANCH: "master",
