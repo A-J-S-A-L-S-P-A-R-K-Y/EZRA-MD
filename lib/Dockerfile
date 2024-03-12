@@ -1,5 +1,7 @@
-FROM quay.io/loki-xer/jarvis-md:latest
-RUN git clone https://github.com/Louis-XD/EZRA-XD /root/bot/
-WORKDIR /root/bot/
-RUN yarn install --network-concurrency 1
+FROM node:18.16.0-bullseye-slim
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
 CMD ["npm", "start"]
